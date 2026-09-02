@@ -1,0 +1,7 @@
+# dsh-google-skills bundle patch layer.
+# Bundles 128 Google agent skills (skills/<name>/SKILL.md); the skill-filesystem
+# provider collects a bundle's skills/ dir into the bundled skill root at
+# install time. No runtime tools are injected.
+- insert:
+    - id: google-skills
+      name: './src/index.js'
