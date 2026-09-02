@@ -1,0 +1,45 @@
+{
+  "name": "dsh-google-skills",
+  "version": "0.1.0",
+  "description": "Google's Agent Skills (google/skills) for DeepSeek Harness: 128 SKILL.md for Google Cloud, ads, analytics and developer products.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "skills",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node scripts/check-skills.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "skill",
+    "google",
+    "gcloud",
+    "google-cloud",
+    "agent-skills"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  }
+}
