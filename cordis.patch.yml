@@ -4,4 +4,4 @@
 # install time. No runtime tools are injected.
 - insert:
     - id: google-skills
-      name: './src/index.js'
+      name: 'dsh-google-skills'
